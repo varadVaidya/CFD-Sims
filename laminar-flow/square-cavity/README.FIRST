@@ -1,0 +1,54 @@
+How to run me:
+
+
+
+#To clean the directory, this is optional
+
+foamCleanTutorials
+
+foamCleanPolyMesh
+
+
+
+#To generate the mesh and check mesh quality
+
+blockMesh
+
+checkMesh
+
+
+
+# Now you have four alternatives to run the case, depending if you want to plot the residuals on-the-fly or not.
+
+
+
+pyFoamPlotRunner.py  simpleFoam	
+paraFoam
+
+
+
+# alternatively 
+
+
+
+simpleFoam > log.simplefoam &
+pyFoamPlotWatcher.py log.simplefoam			
+
+
+
+# or 
+
+
+simpleFoam | tee log.simpleFoam
+
+
+
+# or
+
+simpleFoam > log.simpleFoam | tail -f log.simpleFoam
+
+
+
+# Visualization
+
+paraFoam
