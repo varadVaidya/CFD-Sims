@@ -36,7 +36,7 @@ The final pressure profile develops as:
   
 ![final-pressure](results/Re-200/pressure-profile.png)  
   
-# For Reynolds Number of 1000
+## For Reynolds Number of 1000
 The velocity profile develops as:
   
 ![vel-profile](results/Re-1000/velocity.gif?raw=True)  
