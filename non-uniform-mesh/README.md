@@ -17,11 +17,22 @@ From this site, exact cell size can be found out, thus giving us the exact expan
 * For meshing in both X and Y axis. `siimpleGrading` is set to :  `simpleGrading (10 0.1 1)` ![exp-10](results/exp-10-01.png)
 
   
-# Multiple Blocking Mesh Generation Approach
+# Multiple Block Mesh Generation Approach
 Since `simpleGrading` only applies to one block at a time, creation of multiple different meshes is done by making different blocks and then applyinng `simpleGrading` to provide non-linear meshes.\
 *Note*: The multiple block approach will throw errors if the cell continuity is not maintained. Meaning that the cell boundaries between the blocks are to be maintained.\
   
+In this example, 4 blocks are created to form one big block. 
+![block](results/block.png)
+These 4 individual blocks have different values set in `simpleGrading` to form a mesh according to values set.\
+The outline for these blocks are :
+![outline](results/wireframe.png)\
+And the mesh created is:
+![mesh](results/mesh.png)
+
+
+
   
+
 
 
 
